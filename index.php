@@ -1,6 +1,6 @@
 <?php require_once "cfg/config.php"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,23 +22,12 @@
     <input type='submit' value='Connexion' />
   </form>
 
-  <h2>Liste des utilisateurs</h2>
-  <?php
-    $sql = "SELECT * FROM user"; 
-    $pre = $pdo->prepare($sql); 
-    $pre->execute();
-    $data = $pre->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach($data as $user){ ?>
-      <div class="bloc_user">
-        <h2><?php echo $user['username'] ?></h2>
-      </div>
-      <?php } ?>
-    <?php 
-    if ($user["admin"] == 1)
-    {
-      echo type="submit" value="Supprimer"
-    }else 
+
+   
+      
+    
+  
      
    
 
